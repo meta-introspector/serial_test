@@ -12,7 +12,8 @@ keywords = ["sequential", "testing", "parallel"]
 
 [dependencies]
 once_cell = {version="^1.19", features = ["std"], default-features = false}
-parking_lot = {version="^0.12", default-features = false}
+#parking_lot = {version="^0.12", default-features = false}
+parking_lot = {workspace=true}
 serial_test_derive = { version = "~3.2.0", path = "../serial_test_derive" }
 fslock = { version = "0.2", optional = true, default-features = false, features = ["std"]}
 document-features = { version = "0.2", optional = true }
